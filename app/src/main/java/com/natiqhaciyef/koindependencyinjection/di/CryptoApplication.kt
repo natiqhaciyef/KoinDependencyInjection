@@ -9,7 +9,10 @@ class CryptoApplication : Application() {
         super.onCreate()
         startKoin {
             androidContext(this@CryptoApplication)
-            modules(appModule)
+            modules(
+                appModule,
+                anotherModule
+            )
         }
     }
 }
